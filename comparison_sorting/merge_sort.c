@@ -3,6 +3,8 @@
 //n/2 elements each
 //Conquer: Sort the two subsequences recursively using merge sort.
 //Combine: Merge the two sorted subsequences to produce the sorted answer.
+//Time complexity: Θ(n logn) 
+//Space complexity: An extra O(n) space is required in the Merge procedure
 
 #include <stdio.h>
 #include <stdlib.h>
