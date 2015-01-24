@@ -105,15 +105,8 @@ unsigned long CountInversions(int arr[],int left, int right) {
 int main() {
     //int array[] = {22, 11, 99, 88, 9, 7, 42};
     //int arrSize = 7;
-    //int array[] = {2,3,8,6,1};
-    //int arrSize = 5;
-    int array[100000] = {0};
-    int arrSize = 100000;
-    FILE *fp = fopen("IntegerArray.txt","r");
-    for (int i = 0; i < arrSize; i++) {
-         fscanf(fp, "%d", &array[i]);
-	 printf("%d\n",array[i]);
-    }
+    int array[] = {2,3,8,6,1};
+    int arrSize = 5;
     
     unsigned long inv = CountInversions(array,0,arrSize-1);
     printf("Array after sorting :");
